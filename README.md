@@ -41,6 +41,55 @@ WHITESPACE = _{ " " }
 * WHITESPACE: Represents optional whitespace.
 
 ### Example
-```rust
-to be done...
+```
+<svg>
+    <circle cx="10" cy="10" r="5" />
+    <rect x="20" y="20" width="10" height="10" />
+    Some text content
+</svg>
+
+[
+Svg(
+        [],
+    ),
+    Circle(
+        [
+            (
+                "cx",
+                "10",
+            ),
+            (
+                "cy",
+                "10",
+            ),
+            (
+                "r",
+                "5",
+            ),
+        ],
+    ),
+    Rect(
+        [
+            (
+                "x",
+                "20",
+            ),
+            (
+                "y",
+                "20",
+            ),
+            (
+                "width",
+                "10",
+            ),
+            (
+                "height",
+                "10",
+            ),
+        ],
+    ),
+    Text(
+        "Some text content",
+    ),
+]
 ```
