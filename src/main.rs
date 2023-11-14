@@ -1,5 +1,5 @@
 use anyhow::anyhow;
-use my_parser_kma_makhynia::*;
+use svg_file_parser::*;
 
 fn get_content_from_file(name: &str) -> String {
     let path = format!("example/{}", name);

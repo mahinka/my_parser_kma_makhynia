@@ -9,7 +9,6 @@ circle = { "<circle" ~ attribute+ ~ "/>" }
 rect = { "<rect" ~ attribute+ ~ "/>" }
 line = { "<line" ~ attribute+ ~ "/>" }
 ellipse = { "<ellipse" ~ attribute+ ~ "/>" }
-polygon = { "<polygon" ~ attribute+ ~ "/>" }
 
 attribute = { attribute_name ~ "=" ~ "\"" ~ attribute_value ~ "\"" }
 attribute_name = { ASCII_ALPHA ~ ASCII_ALPHANUMERIC* }

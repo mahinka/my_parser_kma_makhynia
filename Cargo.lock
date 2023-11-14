@@ -75,16 +75,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f665ee40bc4a3c5590afb1e9677db74a508659dfd71e126420da8274909a0167"
 
 [[package]]
-name = "my_parser_kma_makhynia"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "peg",
- "pest",
- "pest_derive",
-]
-
-[[package]]
 name = "once_cell"
 version = "1.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -189,6 +179,16 @@ dependencies = [
  "cfg-if",
  "cpufeatures",
  "digest",
+]
+
+[[package]]
+name = "svg_file_parser"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "peg",
+ "pest",
+ "pest_derive",
 ]
 
 [[package]]
