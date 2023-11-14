@@ -1,5 +1,5 @@
 [package]
-name = "my_parser_kma_makhynia"
+name = "svg_file_parser"
 version = "0.1.0"
 edition = "2021"
 description = "Parser for education purpose."

@@ -1,4 +1,4 @@
-# my_parser_kma_makhynia
+# svg_file_parser
 
 Parser for education purpose.
 
