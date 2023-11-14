@@ -47,7 +47,7 @@ WHITESPACE = _{ " " }
     <rect x="20" y="20" width="10" height="10" />
     Some text content
 </svg>
-
+Result:
 [
 Svg(
         [],
