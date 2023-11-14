@@ -2,7 +2,7 @@
 name = "svg_file_parser"
 version = "0.1.0"
 edition = "2021"
-description = "Parser for education purpose."
+description = "A Rust-based SVG parser designed to interpret scalable vector graphics (SVG) files."
 license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
