@@ -1,0 +1,16 @@
+svg_file = { svg_open ~ svg_content ~ svg_close }
+svg_open = { "<svg" ~ attribute* ~ ">" ~ NEWLINE }
+svg_content = { ((element | text_content ) ~ NEWLINE)* }
+svg_close = { "</svg>" }
+
+element = { circle | rect | line }
+
+circle = { "<circle" ~ attribute* ~ "/>" }
+rect = { "<rect" ~ attribute* ~ "/>" }
+line = { "<line" ~ attribute* ~ "/>" }
+
+attribute = { attribute_name ~ "=" ~ "\"" ~ attribute_value ~ "\"" }
+attribute_name = { ASCII_ALPHA ~ ASCII_ALPHANUMERIC* }
+attribute_value = { ASCII_ALPHANUMERIC* }
+text_content = { ASCII_ALPHANUMERIC* ~ (PUNCTUATION | ASCII_ALPHANUMERIC)*}
+WHITESPACE = _{ " " }
