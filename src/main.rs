@@ -1,15 +1,22 @@
 use anyhow::anyhow;
 use my_parser_kma_makhynia::*;
+
+fn get_content_from_file(name: &str) -> String {
+    let path = format!("example/{}", name);
+    return std::fs::read_to_string(path).expect("Unable to read file");
+}
+
 fn main() {
    // Приклад рядка для парсингу
-   let input = r#"<svg>
+   /*let input = r#"<svg>
            <circle cx="10" cy="10" r="5" />
            <rect x="20" y="20" width="10" height="10" />
            Some text content
        </svg>
-   "#;
+   "#;*/
 
-   match parse_svg(input) {
+   let input = get_content_from_file("example_correct.svg");
+   match parse_svg(&input) {
        Ok(result) => {
            println!("Parsing successful! Result: {:#?}", result);
        }
@@ -18,5 +25,7 @@ fn main() {
        }
    }
 }
+
+
 
 

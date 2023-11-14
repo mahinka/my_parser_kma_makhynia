@@ -3,14 +3,16 @@ svg_open = { "<svg" ~ attribute* ~ ">" ~ NEWLINE }
 svg_content = { ((element | text_content ) ~ NEWLINE)* }
 svg_close = { "</svg>" }
 
-element = { circle | rect | line }
+element = { circle | rect | line | ellipse }
 
-circle = { "<circle" ~ attribute* ~ "/>" }
-rect = { "<rect" ~ attribute* ~ "/>" }
-line = { "<line" ~ attribute* ~ "/>" }
+circle = { "<circle" ~ attribute+ ~ "/>" }
+rect = { "<rect" ~ attribute+ ~ "/>" }
+line = { "<line" ~ attribute+ ~ "/>" }
+ellipse = { "<ellipse" ~ attribute+ ~ "/>" }
+polygon = { "<polygon" ~ attribute+ ~ "/>" }
 
 attribute = { attribute_name ~ "=" ~ "\"" ~ attribute_value ~ "\"" }
 attribute_name = { ASCII_ALPHA ~ ASCII_ALPHANUMERIC* }
 attribute_value = { ASCII_ALPHANUMERIC* }
-text_content = { ASCII_ALPHANUMERIC* ~ (PUNCTUATION | ASCII_ALPHANUMERIC)*}
+text_content = { (PUNCTUATION | ASCII_ALPHANUMERIC)+ ~ (PUNCTUATION | ASCII_ALPHANUMERIC)*}
 WHITESPACE = _{ " " }
