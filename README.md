@@ -7,6 +7,27 @@
 * Uses the Pest parser generator to parse SVG syntax.
 * Outputs a structured representation of SVG content, including elements, attributes, and text.
 * Suitable for Rust developers who work with SVG files, offering a basis for further manipulation or analysis of SVG data.
+### Command-Line Interface
+
+* Help
+Display help information:
+
+```
+cargo run -- help
+```
+
+* Parse
+Parse a SVG file and output file content.
+
+```
+cargo run -- parse -i input.svg -o src/output.txt
+```
+
+If you don't specify an output file, file content will be written to your command-line interface.
+
+```
+cargo run -- parse -i input.svg
+```
 
 ### Grammar
 ```pest
