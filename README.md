@@ -7,6 +7,11 @@
 * Uses the Pest parser generator to parse SVG syntax.
 * Outputs a structured representation of SVG content, including elements, attributes, and text.
 * Suitable for Rust developers who work with SVG files, offering a basis for further manipulation or analysis of SVG data.
+
+### Crate
+
+https://crates.io/crates/svg_file_parser/0.1.0
+
 ### Command-Line Interface
 
 * Help
