@@ -10,7 +10,7 @@
 
 ### Crate
 
-https://crates.io/crates/svg_file_parser/0.1.0
+https://crates.io/crates/svg_file_parser/
 
 ### Command-Line Interface
 
