@@ -1,0 +1,4 @@
+Svg()
+Circle(cx: 10, cy: 10, r: 5)
+Rect(x: 20, y: 20, width: 10, height: 10)
+Text(Some text content)
