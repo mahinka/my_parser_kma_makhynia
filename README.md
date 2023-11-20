@@ -10,6 +10,7 @@
 ### Command-Line Interface
 
 * Help
+
 Display help information:
 
 ```
@@ -17,6 +18,7 @@ cargo run -- help
 ```
 
 * Parse
+
 Parse a SVG file and output file content.
 
 ```
